@@ -1,0 +1,36 @@
+main.container {
+  margin: 60px 110px;
+  padding: 60px;
+  background: #202020;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px 0px #7A00A5;
+}
+
+.container header {
+  margin-bottom: 64px;
+}
+
+.container header h1 {
+  font-size: 48px;
+}
+
+.container header p {
+  font-size: 28px;
+  max-width: 900px;
+}
+
+.container footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 32px 100px
+}
+
+.container footer section {
+  padding: 32px;
+  background: #383838;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+}
+
+.container footer span {
+  font-size: 28px;
+}
