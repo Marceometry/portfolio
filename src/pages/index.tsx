@@ -1,11 +1,12 @@
 import Head from 'next/head'
-import css from '../css/Home.module.css'
+import Link from 'next/link'
+import css from '../css/landing.module.css'
 
-export default function Home() {
+export default function Landing() {
   return (
     <main className={css.container}>
       <Head>
-        <title>Marcelino - Dev | Home</title>
+        <title>Marcelino - FrontEnd Dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -13,46 +14,54 @@ export default function Home() {
         <div>
           <img src="Profile-img.jpg" alt="Marcelino"/>
 
-          <h1>Olá, meu nome é Marcelino!
-          <br/>Sou Desenvolvedor FrontEnd</h1>
+          <h1>Olá, meu nome é Marcelino Teixeira
+          <br/>Eu sou Desenvolvedor FrontEnd.</h1>
         </div>
         
-        <p> Domino HTML e CSS, e estou atualmente focado em praticar a 
+        <p> Tenho 18 anos, domino HTML e CSS, e atualmente estou focado em praticar a 
         biblioteca JavaScript React juntamente do framework Next.js </p>
       </header>
 
       <section>
-        <a>
-          <img src="icons/address-card.svg" alt=""/>
+        <Link href="/about">
+          <a>
+            <img src="icons/address-card.svg" alt=""/>
 
-          <span>Sobre mim</span>
+            <span>Sobre mim</span>
 
-          <img src="icons/arrow-right.svg" alt=""/>
-        </a>
+            <img src="icons/arrow-right.svg" alt=""/>
+          </a>
+        </Link>
         
-        <a>
-          <img id={css.journal} src="icons/journal-whills.svg" alt=""/>
+        <Link href="/portfolio">
+          <a>
+            <img id={css.journal} src="icons/journal-whills.svg" alt=""/>
 
-          <span>Meu portfólio</span>
+            <span>Meu portfólio</span>
 
-          <img src="icons/arrow-right.svg" alt=""/>
-        </a>
-        
-        <a>
-          <img src="icons/envelope.svg" alt=""/>
+            <img src="icons/arrow-right.svg" alt=""/>
+          </a>
+        </Link>
+          
+        <Link href="/contact">
+          <a>
+            <img src="icons/envelope.svg" alt=""/>
 
-          <span>Contato</span>
+            <span>Contato</span>
 
-          <img src="icons/arrow-right.svg" alt=""/>
-        </a>
-        
-        <a>
-          <img src="icons/github.svg" alt=""/>
+            <img src="icons/arrow-right.svg" alt=""/>
+          </a>
+        </Link>
+          
+        <Link href="https://github.com/marceometry">
+          <a target="_blank" rel="external noopener noreferrer nofollow">
+            <img src="icons/github.svg" alt=""/>
 
-          <span>Meu github</span>
+            <span>Meu github</span>
 
-          <img src="icons/arrow-right.svg" alt=""/>
-        </a>
+            <img src="icons/arrow-right.svg" alt=""/>
+          </a>
+        </Link>
       </section>
     </main>
   )
