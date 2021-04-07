@@ -1,3 +1,12 @@
+:root {
+  --background: #202020;
+  --background-2: #383838;
+  --shadow: #585858;
+  --text: #DDDDDD;
+  --purple: #7A00A5;
+  --green: #00FF19;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,13 +14,30 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
+  padding: 5vh 5vw;
   background: #000000;
-  color: #dddddd;
-  font-family: Arial, sans-serif;
+  color: var(--text);
+  font: 400 1rem 'Inter', sans-serif;
 }
 
-a {
+button, a {
   cursor: pointer;
   color: inherit;
   text-decoration: none;
+}
+
+
+/* responsive fonts */
+@media(max-width: 1080px) {
+  html {
+      font-size: 93.75%;
+  }
+}
+
+@media(max-width: 768px) {
+  html {
+      font-size: 87.5%;
+  }
 }

@@ -3,59 +3,57 @@ import css from '../css/Home.module.css'
 
 export default function Home() {
   return (
-    <div>
+    <main className={css.container}>
       <Head>
         <title>Marcelino - Dev | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={css.container}>
-        <header>
-          <div>
-            <img src="Profile-img.jpg" alt="Marcelino"/>
+      <header>
+        <div>
+          <img src="Profile-img.jpg" alt="Marcelino"/>
 
-            <h1>Olá, meu nome é Marcelino!
-            <br/>Sou Desenvolvedor FrontEnd</h1>
-          </div>
-          
-          <p> Domino HTML e CSS, e estou atualmente focado em praticar a 
-          biblioteca JavaScript React juntamente do framework Next.js </p>
-        </header>
+          <h1>Olá, meu nome é Marcelino!
+          <br/>Sou Desenvolvedor FrontEnd</h1>
+        </div>
+        
+        <p> Domino HTML e CSS, e estou atualmente focado em praticar a 
+        biblioteca JavaScript React juntamente do framework Next.js </p>
+      </header>
 
-        <footer>
-          <section>
-            <img src="icons/address-card.svg" alt=""/>
+      <section>
+        <a>
+          <img src="icons/address-card.svg" alt=""/>
 
-            <span>Sobre mim</span>
+          <span>Sobre mim</span>
 
-            <img src="icons/arrow-right.svg" alt=""/>
-          </section>
-          
-          <section>
-            <img src="icons/journal-whills.svg" alt=""/>
+          <img src="icons/arrow-right.svg" alt=""/>
+        </a>
+        
+        <a>
+          <img id={css.journal} src="icons/journal-whills.svg" alt=""/>
 
-            <span>Meu portfólio</span>
+          <span>Meu portfólio</span>
 
-            <img src="icons/arrow-right.svg" alt=""/>
-          </section>
-          
-          <section>
-            <img src="icons/envelope.svg" alt=""/>
+          <img src="icons/arrow-right.svg" alt=""/>
+        </a>
+        
+        <a>
+          <img src="icons/envelope.svg" alt=""/>
 
-            <span>Contato</span>
+          <span>Contato</span>
 
-            <img src="icons/arrow-right.svg" alt=""/>
-          </section>
-          
-          <section>
-            <img src="icons/github.svg" alt=""/>
+          <img src="icons/arrow-right.svg" alt=""/>
+        </a>
+        
+        <a>
+          <img src="icons/github.svg" alt=""/>
 
-            <span>Meu github</span>
+          <span>Meu github</span>
 
-            <img src="icons/arrow-right.svg" alt=""/>
-          </section>
-        </footer>
-      </main>
-    </div>
+          <img src="icons/arrow-right.svg" alt=""/>
+        </a>
+      </section>
+    </main>
   )
 }

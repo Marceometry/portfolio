@@ -1,13 +1,14 @@
 main.container {
-  margin: 60px 110px;
-  padding: 60px;
-  background: #202020;
-  border-radius: 10px;
-  box-shadow: 0px 0px 50px 0px #7A00A5;
-}
+  width: 90vw;
+  height: 90vh;
+  padding: 4rem;
+  background: var(--background);
+  border-radius: 50px;
+  box-shadow: 0px 0px 50px 0px var(--purple);
 
-.container header {
-  margin-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .container header div {
@@ -15,47 +16,64 @@ main.container {
 }
 
 .container header img {
-  width: 120px;
-  height: 120px;
-  border: 1px solid #51006D;
+  width: 8rem;
+  height: 8rem;
+  border: 1px solid var(--purple);
   border-radius: 15px;
 }
 
 .container header h1 {
-  font-size: 48px;
-  margin: 0 0 48px 48px;
+  font-size: 3rem;
+  margin: 0 0 3rem 3rem;
 }
 
 .container header p {
-  font-size: 28px;
+  font-size: 1.75rem;
   max-width: 900px;
 }
 
-.container footer {
+.container section {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 32px 100px
+  gap: 2rem 6rem;
 }
 
-.container footer section {
-  padding: 32px;
-  background: #383838;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+.container section a {
+  padding: 2rem;
+  background: var(--background-2);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #585858;
 
-  position: relative;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
-.container footer img {
-  height: 61px;
+.container section a:hover {
+  box-shadow: 0px 0px 10px var(--green);
+  transition: .2s;
 }
 
-.container footer img:last-child {
+.container section a:active {
+  background: #313131;
+  transition: .01s;
+}
+
+.container section img:first-child {
+  height: 3.75rem;
+  background: var(--text);
+  border-radius: 10px;
+} #journal {
+  border-radius: 13px;
+}
+
+.container section img:last-child {
+  height: 3rem;
+  right: 2rem;
   position: absolute;
-  right: 32px;
 }
-.container footer span {
-  font-size: 28px;
-  margin-left: 24px;
+
+.container section span {
+  font-size: 1.75rem;
+  margin-left: 1.5rem;
 }
