@@ -1,13 +1,36 @@
+import React from 'react'
 import Head from 'next/head'
-import css from '../../css/contact.module.css'
 
-export default function Contact() {
+import Navbar from '../components/Navbar'
+import Profile from '../components/Profile'
+
+import css from '../css/base.module.css'
+
+export default function About() {
     return (
-        <main>
+        <div className={css.container}>
             <Head>
-                <title>Contato</title>
+                <title>Sobre mim</title>
             </Head>
-            <h1>resto do site</h1>
-        </main>
+
+            <Navbar />
+
+            <main>
+                <Profile />
+
+                <section>
+                    <header>
+                        <h2> Sobre mim </h2>
+                        <hr/>
+                    </header>
+
+                    <article>
+                        <p> Email: <strong> marceometry@gmail.com </strong></p>
+
+                        <p> Whatsapp: <strong> +55 51 99579-4033 </strong></p>
+                    </article>
+                </section>
+            </main>
+        </div>
     )
 }

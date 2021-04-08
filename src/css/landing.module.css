@@ -1,4 +1,12 @@
-main.container {
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container main {
   width: min(1400px, 90vw);
   height: 90vh;
   padding: 4rem;

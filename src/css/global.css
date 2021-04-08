@@ -4,6 +4,7 @@
   --shadow: #585858;
   --text: #DDDDDD;
   --purple: #7A00A5;
+  --purple-light: #D04DFF;
   --green: #00FF19;
 }
 
@@ -20,10 +21,6 @@ body {
   background: #000000;
   color: var(--text);
   font: 400 1rem 'Inter', sans-serif;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 button, a {

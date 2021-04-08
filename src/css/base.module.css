@@ -1,0 +1,36 @@
+.container main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container section header {
+    margin: 1rem 7.75rem 2rem;
+}
+
+.container section header h2 {
+    margin-bottom: .5rem;
+}
+
+.container section article p {
+    margin-bottom: .5rem;
+    line-height: 1.25rem;
+    text-align: justify;
+    text-indent: 7.75rem;
+}
+
+.container section article p a {
+    color: var(--purple-light);
+}
+
+.container section article p a i {
+    color: var(--green);
+}
+
+.container section article p a:hover {
+    opacity: .9;
+    transition: .2s;
+}
+
+.container section article p strong {
+    color: var(--purple-light);
+}
