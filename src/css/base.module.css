@@ -26,11 +26,6 @@
     color: var(--green);
 }
 
-.container section article p a:hover {
-    opacity: .9;
-    transition: .2s;
-}
-
 .container section article p strong {
     color: var(--purple-light);
 }

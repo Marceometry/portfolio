@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
 
 import Navbar from '../components/Navbar'
 import Profile from '../components/Profile'
@@ -34,7 +33,7 @@ export default function About() {
                             praticar a biblioteca JavaScript <a><i>React</i></a> juntamente do framework <a><i>Next.js</i></a>. </p>
 
                         <p> Este site foi inteiramente desenvolvido por mim em React, utilizando as 
-                            ferramentas do Next.js. No meu <Link href="portfolio"><a>Portfólio</a></Link>, 
+                            ferramentas do Next.js. No meu <a>Portfólio</a>, 
                             é possível encontrar tanto projetos pessoais (que por enquanto ainda são poucos) 
                             quanto os da NLW que participei, por exemplo, além de trabalhos do meu curso técnico. </p>
                     </article>

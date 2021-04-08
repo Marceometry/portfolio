@@ -10,7 +10,7 @@ export default function About() {
     return (
         <div className={css.container}>
             <Head>
-                <title>Sobre mim</title>
+                <title>Contato</title>
             </Head>
 
             <Navbar />
@@ -20,7 +20,7 @@ export default function About() {
 
                 <section>
                     <header>
-                        <h2> Sobre mim </h2>
+                        <h2> Contato </h2>
                         <hr/>
                     </header>
 
