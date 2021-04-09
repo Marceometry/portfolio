@@ -1,0 +1,15 @@
+.container {
+    margin: 0 1rem;
+    display: flex;
+}
+
+.container img {
+    width: 300px;
+    margin-right: 2rem;
+    border: 1px solid var(--purple);
+}
+
+.container h1,
+.container h3 {
+    color: var(--purple-light)
+}
