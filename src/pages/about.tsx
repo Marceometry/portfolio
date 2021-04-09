@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import Navbar from "../components/Navbar";
 import Profile from "../components/Profile";
+import Footer from "../components/Footer";
 
 import css from "../css/base.module.css";
 
@@ -50,6 +51,8 @@ export default function About() {
           </article>
         </section>
       </main>
+
+      <Footer />
     </div>
   );
 }

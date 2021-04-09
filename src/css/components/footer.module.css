@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+    padding: 4rem;
+    color: var(--green);
+    background: var(--background-2);
+    border-top: 1px solid var(--purple);
+
+    bottom: 0;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer img {
+    width: 1rem;
+    transform: translateY(2px);
+}

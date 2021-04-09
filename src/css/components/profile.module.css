@@ -1,14 +1,14 @@
-.container {
+.header {
     display: flex;
     align-items: center;
 }
 
-.container img {
+.header img {
     height: 6.25rem;
     margin-right: 1.5rem;
     border-radius: 16px;
 }
 
-.container h2 {
+.header h2 {
     margin-bottom: .5rem;
 }
