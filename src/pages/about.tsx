@@ -4,6 +4,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Profile from "../components/Profile";
 import Footer from "../components/Footer";
+import { Green, Purple } from "../components/TextColor";
 
 import css from "../css/base.module.css";
 
@@ -27,20 +28,20 @@ export default function About() {
 
           <article>
             <p>Olá. Meu nome é Marcelino Teixeira, eu tenho 18 anos e estudo 
-               no <strong> Instituto Federal do Rio Grande do Sul - Campus Osório </strong>, 
-               onde faço o curso <strong> Técnico em Informática</strong> Integrado ao Ensino 
+               no <Purple>Instituto Federal do Rio Grande do Sul - Campus Osório</Purple>, 
+               onde faço o curso <Purple>Técnico em Informática</Purple> Integrado ao Ensino 
                Médio. No ano de 2020, fui introduzido à matéria de programação
                web, pela qual me interessei e comecei a estudar mais por conta
                própria. Fiz cursos à distância, além de participar de eventos
                como a Next Level Week, da Rocketseat, o que me proporcionou
                bastante prática e aprendizado. Atualmente, 
-               domino <strong><i> HTML </i></strong> e <strong><i> CSS </i></strong>, 
+               domino <Green>HTML</Green> e <Green>CSS</Green>, 
                e estou focado em praticar a biblioteca 
-               JavaScript <strong><i>React</i></strong> juntamente 
-               do framework <strong><i>Next.js</i></strong>.</p>
+               JavaScript <Green>React</Green> juntamente 
+               do framework <Green>Next.js</Green>.</p>
 
             <p>Este site foi inteiramente desenvolvido por mim em React,
-               utilizando as ferramentas do Next.js. Em meu <strong>Portfólio</strong>, 
+               utilizando as ferramentas do Next.js. Em meu <Purple>Portfólio</Purple>, 
                é possível encontrar tanto projetos pessoais (que por enquanto ainda são 
                poucos) quanto os da NLW que participei, por exemplo, além de trabalhos 
                do meu curso técnico.</p>

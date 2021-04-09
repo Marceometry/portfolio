@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Profile from '../components/Profile'
 import Footer from '../components/Footer'
+import { Purple } from '../components/TextColor'
 
 import css from '../css/base.module.css'
 
@@ -26,9 +27,9 @@ export default function About() {
                     </header>
 
                     <article>
-                        <p> Email: <strong> marceometry@gmail.com </strong></p>
+                        <p> Email: <Purple> marceometry@gmail.com </Purple></p>
 
-                        <p> Whatsapp: <strong> +55 51 99579-4033 </strong></p>
+                        <p> Whatsapp: <Purple> +55 51 99579-4033 </Purple></p>
                     </article>
                 </section>
             </main>

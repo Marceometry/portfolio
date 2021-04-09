@@ -1,0 +1,36 @@
+.container main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container main header {
+    margin-bottom: 2rem;
+}
+
+.container main header h2 {
+    text-align: center;
+}
+
+.container main hr {
+    margin: .5rem 0 1rem;
+}
+
+.container section div {
+    width: 90%;
+    height: fit-content;
+    margin: 2rem auto 1.25rem;
+}
+
+.container section img {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid var(--purple)
+}
+
+.container section p {
+    text-align: justify;
+}
+
+.container footer {
+    position: relative;
+}

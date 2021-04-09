@@ -1,5 +1,7 @@
+import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import { Green } from '../components/TextColor'
 import css from '../css/landing.module.css'
 
 export default function Landing() {
@@ -19,8 +21,8 @@ export default function Landing() {
             <br/>Eu sou Desenvolvedor FrontEnd.</h1>
           </div>
           
-          <p> Tenho 18 anos, domino <strong>HTML</strong> e <strong>CSS</strong>, e atualmente estou focado em praticar a 
-          biblioteca JavaScript <strong>React</strong> juntamente do framework <strong>Next.js</strong> </p>
+          <p> Tenho 18 anos, domino <Green>HTML</Green> e <Green>CSS</Green>, e atualmente estou focado em praticar a 
+          biblioteca JavaScript <Green>React</Green> juntamente do framework <Green>Next.js</Green> </p>
         </header>
 
         <section>
