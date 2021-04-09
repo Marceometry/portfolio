@@ -41,6 +41,10 @@
   max-width: 900px;
 }
 
+.container header p a {
+  color: var(--green);
+}
+
 .container section {
   display: grid;
   grid-template-columns: auto auto;

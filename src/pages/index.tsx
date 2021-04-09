@@ -19,8 +19,8 @@ export default function Landing() {
             <br/>Eu sou Desenvolvedor FrontEnd.</h1>
           </div>
           
-          <p> Tenho 18 anos, domino HTML e CSS, e atualmente estou focado em praticar a 
-          biblioteca JavaScript React juntamente do framework Next.js </p>
+          <p> Tenho 18 anos, domino <a>HTML</a> e <a>CSS</a>, e atualmente estou focado em praticar a 
+          biblioteca JavaScript <a>React</a> juntamente do framework <a>Next.js</a> </p>
         </header>
 
         <section>
