@@ -24,14 +24,11 @@
     text-indent: 7.75rem;
 }
 
-.container section article p a {
-    color: var(--purple-light);
-}
-
-.container section article p a i {
-    color: var(--green);
-}
-
 .container section article p strong {
     color: var(--purple-light);
+    font-weight: 400;
+}
+
+.container section article p strong i {
+    color: var(--green);
 }
