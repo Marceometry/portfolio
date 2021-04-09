@@ -3,13 +3,34 @@
     display: flex;
 }
 
+.container:hover img {
+    border: 1px solid var(--green);
+}
+
+.container:hover h2,
+.container:hover h3 {
+    color: var(--green);
+}
+
 .container img {
     width: 300px;
     margin-right: 2rem;
+    border-radius: 10px;
     border: 1px solid var(--purple);
+    transition: border .2s;
 }
 
-.container h1,
+.container h2 {
+    margin-bottom: .5rem;
+    color: var(--purple-light);
+    transition: color .1s;
+}
 .container h3 {
-    color: var(--purple-light)
+    margin-bottom: 1rem;
+    color: var(--purple-light);
+    transition: color .1s;
+}
+
+.container p {
+    text-align: justify;
 }

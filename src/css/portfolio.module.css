@@ -1,0 +1,20 @@
+.container main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container main header {
+    margin-bottom: 2rem;
+}
+
+.container main header hr {
+    margin: .5rem 0 2rem;
+}
+
+.container main hr {
+    margin: 1.5rem 0;
+}
+
+.container footer {
+    position: relative;
+}

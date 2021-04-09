@@ -1,13 +1,43 @@
+import React from 'react'
 import Head from 'next/head'
-import css from '../../css/portfolio.module.css'
+
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+
+import css from '../css/portfolio.module.css'
+import Project from '../components/Project'
 
 export default function Portfolio() {
     return (
-        <main>
+        <div className={css.container}>
             <Head>
                 <title>Portfólio</title>
             </Head>
-            <h1>resto do site</h1>
-        </main>
+
+            <Navbar />
+
+            <main>
+                <header>
+                    <h2> Meu Portfólio </h2>
+                    <hr/>
+                </header>
+
+                <Project />
+
+                <hr/>
+
+                <Project />
+
+                <hr/>
+
+                <Project />
+
+                <hr/>
+
+                <Project />
+            </main>
+
+            <Footer />
+        </div>
     )
 }
