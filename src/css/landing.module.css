@@ -41,8 +41,9 @@
   max-width: 900px;
 }
 
-.container header p a {
+.container header p strong {
   color: var(--green);
+  font-weight: 400;
 }
 
 .container section {
