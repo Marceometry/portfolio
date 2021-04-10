@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -42,6 +43,24 @@ export default function Portfolio() {
                    semper lectus vitae facilisis. Nunc sodales orci libero, in ultrices nisi euismod 
                    at. Proin vel erat mauris. Etiam lorem neque, tempor in ante lobortis, ultricies.</p>
                 </section>
+
+                <div className={css.links}>
+                    <Link href="https://github.com/marceometry">
+                    <a className={css.left} target="_blank" rel="external noopener noreferrer nofollow">
+                        <img src="icons/github.svg" alt=""/>
+        
+                        <span>Repositório no GitHub</span>
+                    </a>
+                    </Link>
+                    
+                    <Link href="https://github.com/marceometry">
+                    <a className={css.right} target="_blank" rel="external noopener noreferrer nofollow">
+                        <span>Acesse na Internet</span>
+        
+                        <img src="icons/globe.svg" alt=""/>
+                    </a>
+                    </Link>
+                </div>
             </main>
 
             <Footer />

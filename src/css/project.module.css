@@ -32,6 +32,49 @@
     text-indent: 2.5rem;
 }
 
+.container .links {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .links a {
+    width: fit-content;
+    padding: 1rem .75rem;
+    background: var(--background-2);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--purple);
+
+    display: flex;
+    align-items: center;
+}
+
+.container .links a:hover {
+    box-shadow: 0px 0px 10px var(--green);
+    transition: .2s;
+}   
+
+.container .links a:active {
+    background: #313131;
+    transition: .01s;
+}
+
+.container .links img {
+    height: 3rem;
+    margin: 0 .25rem;
+    background: var(--text);
+    border-radius: 10px;
+}
+
+.container .links .right img {
+    border-radius: 50px;
+}
+
+.container .links span {
+    font-size: 1.25rem;
+    margin: 0 .25rem;
+}
+
 .container footer {
     position: relative;
 }
