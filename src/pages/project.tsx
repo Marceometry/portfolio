@@ -17,13 +17,13 @@ export default function Portfolio() {
 
             <main>
                 <header>
-                    <h2> Nome do Projeto </h2>
+                    <h2> Happy </h2>
                     <hr/>
                 </header>
 
                 <section>
                     <div>
-                        <img src="images/wallpaper.jpg" alt=""/>
+                        <img src="images/happy.png" alt=""/>
                     </div>
 
                     <h2>Descrição do projeto</h2>

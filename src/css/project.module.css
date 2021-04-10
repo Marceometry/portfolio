@@ -29,6 +29,7 @@
 
 .container section p {
     text-align: justify;
+    text-indent: 2.5rem;
 }
 
 .container footer {

@@ -6,11 +6,11 @@ export default function Project() {
     return (
         <Link href="/project#navbar">
             <a className={css.container}>
-                <img src="images/wallpaper.jpg" alt="Capa do Projeto"/>
+                <img src="images/happy.png" alt="Capa do Projeto"/>
 
                 <section>
-                    <h2>Nome do Projeto</h2>
-                    <h3>Origem do Projeto</h3>
+                    <h2>Happy</h2>
+                    <h3>NLW#3 - Rocketseat</h3>
 
                     <p>Descrição do projeto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                        Curabitur vehicula tortor maximus mauris venenatis scelerisque. Nulla tristique 
