@@ -6,7 +6,7 @@ import css from '../css/components/profile.module.css'
 export default function Profile() {
     return (
         <header className={css.header}>
-            <img src="images/profile-img.jpg" alt="Marcelino"/>
+            <img src="https://github.com/marceometry.png" alt="Marcelino"/>
 
             <Link href="/"><a>
                 <div>

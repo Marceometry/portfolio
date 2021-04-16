@@ -15,7 +15,7 @@ export default function Landing() {
 
         <header>
           <div>
-            <img src="images/profile-img.jpg" alt="Marcelino"/>
+            <img src="https://github.com/marceometry.png" alt="Marcelino"/>
 
             <h1>Olá, meu nome é Marcelino Teixeira
             <br/>Eu sou Desenvolvedor FrontEnd.</h1>
