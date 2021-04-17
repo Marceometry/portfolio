@@ -14,7 +14,7 @@ export default function Navbar() {
     return (
         <div className={css.container}>
             <header>
-                <img src="images/wallpaper.jpg" alt=""/>
+                <img src="/images/wallpaper.jpg" alt=""/>
             </header>
 
             <ul id="navbar">

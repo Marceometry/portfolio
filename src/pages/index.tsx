@@ -28,41 +28,41 @@ export default function Landing() {
         <section>
           <Link href="/about">
             <a>
-              <img src="icons/address-card.svg" alt=""/>
+              <img src="/icons/address-card.svg" alt=""/>
 
               <span>Sobre mim</span>
 
-              <img src="icons/arrow-right.svg" alt=""/>
+              <img src="/icons/arrow-right.svg" alt=""/>
             </a>
           </Link>
           
           <Link href="/portfolio">
             <a>
-              <img id={css.journal} src="icons/journal-whills.svg" alt=""/>
+              <img id={css.journal} src="/icons/journal-whills.svg" alt=""/>
 
               <span>Meu portfólio</span>
 
-              <img src="icons/arrow-right.svg" alt=""/>
+              <img src="/icons/arrow-right.svg" alt=""/>
             </a>
           </Link>
             
           <Link href="/contact">
             <a>
-              <img src="icons/envelope.svg" alt=""/>
+              <img src="/icons/envelope.svg" alt=""/>
 
               <span>Contato</span>
 
-              <img src="icons/arrow-right.svg" alt=""/>
+              <img src="/icons/arrow-right.svg" alt=""/>
             </a>
           </Link>
             
           <Link href="https://github.com/marceometry">
             <a target="_blank" rel="external noopener noreferrer nofollow">
-              <img src="icons/github.svg" alt=""/>
+              <img src="/icons/github.svg" alt=""/>
 
               <span>Meu GitHub</span>
 
-              <img src="icons/arrow-right.svg" alt=""/>
+              <img src="/icons/arrow-right.svg" alt=""/>
             </a>
           </Link>
         </section>

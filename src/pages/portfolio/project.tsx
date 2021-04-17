@@ -2,10 +2,10 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Navbar from '../../components/Navbar'
+import Footer from '../../components/Footer'
 
-import css from '../css/project.module.css'
+import css from '../../css/project.module.css'
 
 export default function Portfolio() {
     return (
@@ -24,7 +24,7 @@ export default function Portfolio() {
 
                 <section>
                     <div>
-                        <img src="images/happy.png" alt=""/>
+                        <img src="/images/happy.png" alt=""/>
                     </div>
 
                     <h2>Descrição do projeto</h2>
@@ -47,7 +47,7 @@ export default function Portfolio() {
                 <div className={css.links}>
                     <Link href="https://github.com/marceometry">
                     <a className={css.left} target="_blank" rel="external noopener noreferrer nofollow">
-                        <img src="icons/github.svg" alt=""/>
+                        <img src="/icons/github.svg" alt=""/>
         
                         <span>Repositório no GitHub</span>
                     </a>
@@ -57,7 +57,7 @@ export default function Portfolio() {
                     <a className={css.right} target="_blank" rel="external noopener noreferrer nofollow">
                         <span>Acesse na Internet</span>
         
-                        <img src="icons/globe.svg" alt=""/>
+                        <img src="/icons/globe.svg" alt=""/>
                     </a>
                     </Link>
                 </div>

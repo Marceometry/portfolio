@@ -4,7 +4,7 @@ import css from '../css/components/project.module.css'
 
 export default function Project() {
     return (
-        <Link href="/project#navbar">
+        <Link href="/portfolio/project">
             <a className={css.container}>
                 <img src="images/happy.png" alt="Capa do Projeto"/>
 
