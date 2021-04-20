@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import Link from 'next/link'
 import css from '../css/components/project.module.css'
 
-export default function Project(props) {
+type ProjectProps = {
+    id: string
+    img: string
+    title: string
+    origin: string
+    children: ReactNode
+}
+
+export default function Project(props: ProjectProps) {
     return (
         <Link href={`/portfolio/project/${props.id}`}>
             <a className={css.container}>

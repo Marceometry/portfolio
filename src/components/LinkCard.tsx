@@ -1,8 +1,15 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Link from "next/link";
 import css from "../css/components/linkCard.module.css"
 
-export default function LinkCard(props) {
+type LinkCardProps = {
+    link: string
+    external: string
+    img: string
+    children: ReactNode
+}
+
+export default function LinkCard(props: LinkCardProps) {
     return (
         <Link href={props.link}>
         <a className={css.linkCard} target={props.external == 'true' ? '_blank': ''}
