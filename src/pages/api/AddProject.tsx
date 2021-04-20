@@ -11,7 +11,7 @@ type AddProjectInfo = {
     webLink: string
 }
 
-export default async function AddProject( req, res) {
+export default async function AddProject(req, res) {
     if (req.method === 'POST') {
         const {
             name,
@@ -30,7 +30,6 @@ export default async function AddProject( req, res) {
         }
 
         const { db } = await connect()
-
         const response = await db.collection('Projects').insertOne({
             name,
             origin,
