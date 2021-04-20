@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { Green } from '../components/TextColor'
 import css from '../css/landing.module.css'
+import LinkCard from '../components/LinkCard'
 
 export default function Landing() {
   return (
@@ -21,50 +22,18 @@ export default function Landing() {
             <br/>Eu sou Desenvolvedor FrontEnd.</h1>
           </div>
           
-          <p> Tenho 18 anos, domino <Green>HTML</Green> e <Green>CSS</Green>, e atualmente estou focado em praticar a 
+          <p> Tenho 18 anos, domino <Green>HTML</Green> e <Green>CSS</Green> e atualmente estou focado em praticar a 
           biblioteca JavaScript <Green>React</Green> juntamente do framework <Green>Next.js</Green> </p>
         </header>
 
         <section>
-          <Link href="/about">
-            <a>
-              <img src="/icons/address-card.svg" alt=""/>
-
-              <span>Sobre mim</span>
-
-              <img src="/icons/arrow-right.svg" alt=""/>
-            </a>
-          </Link>
+          <LinkCard link="/about" img="address-card">Sobre mim</LinkCard>
           
-          <Link href="/portfolio">
-            <a>
-              <img id={css.journal} src="/icons/journal-whills.svg" alt=""/>
-
-              <span>Meu portfólio</span>
-
-              <img src="/icons/arrow-right.svg" alt=""/>
-            </a>
-          </Link>
+          <LinkCard link="/portfolio" img="journal-whills">Meu portfólio</LinkCard>
             
-          <Link href="/contact">
-            <a>
-              <img src="/icons/envelope.svg" alt=""/>
-
-              <span>Contato</span>
-
-              <img src="/icons/arrow-right.svg" alt=""/>
-            </a>
-          </Link>
+          <LinkCard link="/contact" img="envelope">Contato</LinkCard>
             
-          <Link href="https://github.com/marceometry">
-            <a target="_blank" rel="external noopener noreferrer nofollow">
-              <img src="/icons/github.svg" alt=""/>
-
-              <span>Meu GitHub</span>
-
-              <img src="/icons/arrow-right.svg" alt=""/>
-            </a>
-          </Link>
+          <LinkCard link="https://github.com/marceometry" img="github" external="true">Meu GitHub</LinkCard>
         </section>
       </main>
     </div>

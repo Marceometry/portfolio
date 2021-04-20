@@ -1,11 +1,11 @@
 import React from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
 
-import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
+import Navbar from '../../../components/Navbar'
+import LinkCard from '../../../components/LinkCard'
+import Footer from '../../../components/Footer'
 
-import css from '../../css/project.module.css'
+import css from '../../../css/project.module.css'
 
 export default function Portfolio() {
     return (
@@ -45,21 +45,11 @@ export default function Portfolio() {
                 </section>
 
                 <div className={css.links}>
-                    <Link href="https://github.com/marceometry">
-                    <a className={css.left} target="_blank" rel="external noopener noreferrer nofollow">
-                        <img src="/icons/github.svg" alt=""/>
-        
-                        <span>Repositório no GitHub</span>
-                    </a>
-                    </Link>
+                    <LinkCard link="https://github.com/marceometry" img="github" external="true">Repositório</LinkCard>
+
+                    <LinkCard link="https://www.figma.com/file/JulJQK2kpLXpexpcqQNiwU/My-website" img="figma" external="true">Design</LinkCard>
                     
-                    <Link href="https://github.com/marceometry">
-                    <a className={css.right} target="_blank" rel="external noopener noreferrer nofollow">
-                        <span>Acesse na Internet</span>
-        
-                        <img src="/icons/globe.svg" alt=""/>
-                    </a>
-                    </Link>
+                    <LinkCard link="https://my-website-blue.vercel.app" img="globe" external="true">Acesse</LinkCard>
                 </div>
             </main>
 
