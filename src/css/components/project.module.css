@@ -8,7 +8,7 @@
 }
 
 .container:hover h2,
-.container:hover h3 {
+.container:hover h4 {
     color: var(--green);
 }
 
@@ -25,7 +25,7 @@
     color: var(--purple-light);
     transition: color .1s;
 }
-.container h3 {
+.container h4 {
     margin-bottom: 1rem;
     color: var(--purple-light);
     transition: color .1s;

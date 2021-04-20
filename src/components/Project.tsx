@@ -18,7 +18,7 @@ export default function Project(props: ProjectProps) {
 
                 <section>
                     <h2>{props.title}</h2>
-                    <h3>{props.origin}</h3>
+                    <h4>{props.origin}</h4>
 
                     <p>{props.children}</p>
                 </section>

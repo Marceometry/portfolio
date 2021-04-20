@@ -2,10 +2,10 @@ import React from 'react'
 import Head from 'next/head'
 
 import Navbar from '../components/Navbar'
+import Project from '../components/Project'
 import Footer from '../components/Footer'
 
 import css from '../css/portfolio.module.css'
-import Project from '../components/Project'
 
 export default function Portfolio() {
     return (
