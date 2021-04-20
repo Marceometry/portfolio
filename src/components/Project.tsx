@@ -12,7 +12,7 @@ type ProjectProps = {
 
 export default function Project(props: ProjectProps) {
     return (
-        <Link href={`/portfolio/project/${props.id}`}>
+        <Link href={`/portfolio/${props.id}`}>
             <a className={css.container}>
                 <img src={props.img} alt="Capa do Projeto"/>
 

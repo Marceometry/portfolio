@@ -1,9 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 
-import Navbar from '../../../components/Navbar'
-import LinkCard from '../../../components/LinkCard'
-import Footer from '../../../components/Footer'
+import Navbar from '../../components/Navbar'
+import LinkCard from '../../components/LinkCard'
+import Footer from '../../components/Footer'
 
 import css from '../../../css/project.module.css'
 
