@@ -6,9 +6,9 @@ type TextColorProps = {
 }
 
 export function Green({ children }: TextColorProps) {
-    return <span className={css.green}> { children } </span>
+    return <span className={css.green}>{ children }</span>
 }
 
 export function Purple({ children }: TextColorProps) {
-    return <span className={css.purple}> { children } </span>
+    return <span className={css.purple}>{ children }</span>
 }

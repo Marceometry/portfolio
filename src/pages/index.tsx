@@ -23,15 +23,15 @@ export default function Landing() {
           </div>
           
           <p> Tenho 18 anos, domino <Green>HTML</Green> e <Green>CSS</Green> e atualmente estou focado em praticar a 
-          biblioteca JavaScript <Green>React</Green> juntamente do framework <Green>Next.js</Green> </p>
+          biblioteca JavaScript <Green>React</Green> juntamente do framework <Green>Next.js</Green>. </p>
         </header>
 
         <section>
-          <LinkCard link="/about" img="address-card">Sobre mim</LinkCard>
+          <LinkCard link="/about" img="address-card" external="false">Sobre mim</LinkCard>
           
-          <LinkCard link="/portfolio" img="journal-whills">Meu portfólio</LinkCard>
+          <LinkCard link="/portfolio" img="journal-whills" external="false">Meu portfólio</LinkCard>
             
-          <LinkCard link="/contact" img="envelope">Contato</LinkCard>
+          <LinkCard link="/contact" img="envelope" external="false">Contato</LinkCard>
             
           <LinkCard link="https://github.com/marceometry" img="github" external="true">Meu GitHub</LinkCard>
         </section>
