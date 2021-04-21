@@ -42,7 +42,6 @@ export default function Portfolio(props: Props) {
     )
 }
 
-
 type Project = {
     _id: string
     name: string
