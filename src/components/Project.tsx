@@ -7,11 +7,12 @@ type ProjectProps = {
     img: string
     title: string
     origin: string
-    children: ReactNode
+    description: string
 }
 
 export default function Project(props: ProjectProps) {
     return (
+        <>
         <Link href={`/portfolio/${props._id}`}>
             <a className={css.container}>
                 <img src={props.img} alt="Capa do Projeto"/>
@@ -20,9 +21,12 @@ export default function Project(props: ProjectProps) {
                     <h2>{props.title}</h2>
                     <h4>{props.origin}</h4>
 
-                    <p>{props.children}</p>
+                    <p>{props.description}</p>
                 </section>
             </a>
         </Link>
+
+        <hr/>
+        </>
     )
 }

@@ -29,13 +29,13 @@ export default function Portfolio({ projects }: PortfolioProps) {
                 <hr/>
 
                 {projects.map((project: Project) => (
-                    <>
-                    <Project key={project._id} _id={project._id} img={`/images/${project.img}`} title={project.name} origin={project.origin}>
-                        {project.description}
-                    </Project>
-
-                    <hr/>
-                    </>
+                    <Project key={project._id} 
+                        _id={project._id} 
+                        img={`/images/${project.img}`} 
+                        title={project.name} 
+                        origin={project.origin} 
+                        description={project.description}
+                    />
                 ))}
             </main>
 

@@ -73,9 +73,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
     return { paths, fallback: false }
 }
 
-export const getStaticProps: GetStaticProps = async (ctx) => {
-    const { id } = ctx.params
-    const { data } = await api.get(`api/projects/${id}`)
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+    const { data } = await api.get(`api/projects/${params.id}`)
     
     const project = {
         _id: data._id,
