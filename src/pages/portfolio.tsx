@@ -1,5 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
+import { GetStaticProps } from 'next'
+import { api } from '../../utils/api'
 
 import Navbar from '../components/Navbar'
 import Project from '../components/Project'
@@ -7,11 +9,11 @@ import Footer from '../components/Footer'
 
 import css from '../css/portfolio.module.css'
 
-type Props = {
-    projects: object[]
+type PortfolioProps = {
+    projects: Project[]
 }
 
-export default function Portfolio(props: Props) {
+export default function Portfolio({ projects }: PortfolioProps) {
     return (
         <div className={css.container}>
             <Head>
@@ -26,9 +28,9 @@ export default function Portfolio(props: Props) {
                 </header>
                 <hr/>
 
-                {props.projects.map((project: Project) => (
+                {projects.map((project: Project) => (
                     <>
-                    <Project _id={project._id} img={`/images/${project.img}`} title={project.name} origin={project.origin}>
+                    <Project key={project._id} _id={project._id} img={`/images/${project.img}`} title={project.name} origin={project.origin}>
                         {project.description}
                     </Project>
 
@@ -51,12 +53,23 @@ type Project = {
     img: string
 }
 
-export async function getStaticProps() {
-    const res = await fetch('http://localhost:3000/api/find-projects')
-    const projects = await res.json()
+export const getStaticProps: GetStaticProps = async () => {
+    const { data } = await api.get('api/find-projects')
+
+    const projects = data.map((project: Project) => {
+        return {
+            _id: project._id,
+            name: project.name,
+            origin: project.origin,
+            description: project.description,
+            img: project.img
+        }
+    })
 
     return {
-        props: { projects },
+        props: {
+            projects
+        },
         revalidate: 60 * 60 * 8
     }
 }

@@ -6,40 +6,45 @@ import LinkCard from '../../components/LinkCard'
 import Footer from '../../components/Footer'
 
 import css from '../../css/project.module.css'
+import { GetStaticPaths, GetStaticProps } from 'next'
+import { api } from '../../../utils/api'
 
-export default function Project(props: { project: Project }) {
+type ProjectProps = {
+    project: Project
+}
+
+export default function Project({ project }: ProjectProps) {
     return (
         <div className={css.container}>
             <Head>
-                <title>{props.project.name}</title>
+                <title>{project.name}</title>
             </Head>
 
             <Navbar />
 
             <main>
                 <header>
-                    {console.log(props.project)}
-                    <h2>{props.project.name}</h2>
+                    <h2>{project.name}</h2>
                     <hr/>
                 </header>
 
                 <section>
                     <div>
-                        <img src={`/images/${props.project.img}`} alt="Capa do Projeto"/>
+                        <img src={`/images/${project.img}`} alt="Capa do Projeto"/>
                     </div>
 
                     <h2>Descrição do projeto</h2>
                     <hr/>
 
-                    <p>{props.project.details}</p>
+                    <p>{project.details}</p>
                 </section>
 
                 <div className={css.links}>
-                    <LinkCard link={`${props.project.githubLink}`} img="github" external="true">Repositório</LinkCard>
+                    <LinkCard link={`${project.githubLink}`} img="github" external="true">Repositório</LinkCard>
                     
-                    {props.project.designLink && <LinkCard link={`${props.project.designLink}`} img="figma" external="true">Design</LinkCard>}
+                    {project.designLink && <LinkCard link={`${project.designLink}`} img="figma" external="true">Design</LinkCard>}
                     
-                    {props.project.webLink && <LinkCard link={`${props.project.webLink}`} img="globe" external="true">Acesse</LinkCard>}
+                    {project.webLink && <LinkCard link={`${project.webLink}`} img="globe" external="true">Acesse</LinkCard>}
                 </div>
             </main>
 
@@ -58,23 +63,53 @@ type Project = {
     webLink: string
 }
 
-export async function getStaticPaths() {
-    const res = await fetch('http://localhost:3000/api/find-projects')
-    const projects = await res.json()
-  
-    const paths = projects.map((project: Project) => ({
+export const getStaticPaths: GetStaticPaths = async () => {
+    const { data } = await api.get('api/find-projects')
+    
+    const paths = data.map((project: Project) => ({
         params: { id: project._id },
     }))
-  
+    
     return { paths, fallback: false }
 }
 
-export async function getStaticProps({ params }) {
-    const res = await fetch(`http://localhost:3000/api/projects/${params.id}`)
-    const project = await res.json()
-
+export const getStaticProps: GetStaticProps = async (ctx) => {
+    const { id } = ctx.params
+    const { data } = await api.get(`api/projects/${id}`)
+    
+    const project = {
+        _id: data._id,
+        name: data.name,
+        details: data.details,
+        img: data.img,
+        githubLink: data.githubLink,
+        designLink: data.designLink,
+        webLink: data.webLink
+    }
+    
     return {
         props: { project },
         revalidate: 60 * 60 * 8
     }
 }
+
+// export async function getStaticPaths() {
+//     const res = await fetch('http://localhost:3000/api/find-projects')
+//     const projects = await res.json()
+  
+//     const paths = projects.map((project: Project) => ({
+//         params: { id: project._id },
+//     }))
+  
+//     return { paths, fallback: false }
+// }
+
+// export async function getStaticProps({ params }) {
+//     const res = await fetch(`http://localhost:3000/api/projects/${params.id}`)
+//     const project = await res.json()
+
+//     return {
+//         props: { project },
+//         revalidate: 60 * 60 * 8
+//     }
+// }
