@@ -25,7 +25,7 @@ export default async function AddProject(req, res) {
         }: AddProjectInfo = req.body
 
         if (!name || !origin || !description || !githubLink) {
-            res.status(400).json({ message: "Missing body parameters" })
+            res.status(400).json({ error: "Missing body parameters" })
             return
         }
 
@@ -42,6 +42,6 @@ export default async function AddProject(req, res) {
         })
         res.status(200).json(response.ops[0])
     } else {
-        res.status(400).json({ message: 'Wrong request method' })
+        res.status(400).json({ error: 'Wrong request method' })
     }
 }
