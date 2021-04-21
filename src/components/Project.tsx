@@ -3,7 +3,7 @@ import Link from 'next/link'
 import css from '../css/components/project.module.css'
 
 type ProjectProps = {
-    id: string
+    _id: string
     img: string
     title: string
     origin: string
@@ -12,7 +12,7 @@ type ProjectProps = {
 
 export default function Project(props: ProjectProps) {
     return (
-        <Link href={`/portfolio/${props.id}`}>
+        <Link href={`/portfolio/${props._id}`}>
             <a className={css.container}>
                 <img src={props.img} alt="Capa do Projeto"/>
 
