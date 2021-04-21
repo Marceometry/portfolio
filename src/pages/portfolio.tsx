@@ -42,6 +42,7 @@ export default function Portfolio(props: Props) {
     )
 }
 
+
 type Project = {
     _id: string
     name: string
@@ -51,7 +52,7 @@ type Project = {
 }
 
 export async function getStaticProps() {
-    const res = await fetch('/api/find-projects')
+    const res = await fetch('http://localhost:3000/api/find-projects')
     const projects = await res.json()
 
     return {
