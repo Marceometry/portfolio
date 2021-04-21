@@ -59,7 +59,7 @@ type Project = {
 }
 
 export async function getStaticPaths() {
-    const res = await fetch('http://localhost:3000/api/find-projects')
+    const res = await fetch('../api/find-projects')
     const projects = await res.json()
   
     const paths = projects.map((project: Project) => ({
@@ -70,7 +70,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const res = await fetch(`http://localhost:3000/api/projects/${params.id}`)
+    const res = await fetch(`../api/projects/${params.id}`)
     const project = await res.json()
 
     return {
