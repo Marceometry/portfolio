@@ -83,24 +83,3 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         revalidate: 60 * 60 * 8
     }
 }
-
-// export async function getStaticPaths() {
-//     const res = await fetch('http://localhost:3000/api/find-projects')
-//     const projects = await res.json()
-  
-//     const paths = projects.map((project: Project) => ({
-//         params: { id: project._id },
-//     }))
-  
-//     return { paths, fallback: false }
-// }
-
-// export async function getStaticProps({ params }) {
-//     const res = await fetch(`http://localhost:3000/api/projects/${params.id}`)
-//     const project = await res.json()
-
-//     return {
-//         props: { project },
-//         revalidate: 60 * 60 * 8
-//     }
-// }
