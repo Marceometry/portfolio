@@ -11,7 +11,6 @@ export default function Landing() {
       <main>
         <Head>
           <title>Marcelino - FrontEnd Dev</title>
-          <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <header>
