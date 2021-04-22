@@ -56,20 +56,10 @@ type Project = {
 export const getStaticProps: GetStaticProps = async () => {
     const { data } = await api.get('find-projects')
 
-    const projects = data.map((project: Project) => {
-        return {
-            _id: project._id,
-            name: project.name,
-            origin: project.origin,
-            description: project.description,
-            img: project.img
-        }
-    })
+    const projects = data
 
     return {
-        props: {
-            projects
-        },
+        props: { projects },
         revalidate: 60 * 60 * 8
     }
 }

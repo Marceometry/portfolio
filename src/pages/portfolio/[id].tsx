@@ -76,15 +76,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
     const { data } = await api.get(`projects/${params.id}`)
     
-    const project = {
-        _id: data._id,
-        name: data.name,
-        details: data.details,
-        img: data.img,
-        githubLink: data.githubLink,
-        designLink: data.designLink,
-        webLink: data.webLink
-    }
+    const project = data
     
     return {
         props: { project },
