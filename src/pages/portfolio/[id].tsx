@@ -7,7 +7,7 @@ import Footer from '../../components/Footer'
 
 import css from '../../css/project.module.css'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { api } from '../../../utils/api'
+import { api } from '../../utils/api'
 
 type ProjectProps = {
     project: Project
@@ -80,6 +80,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     
     return {
         props: { project },
-        revalidate: 60 * 60 * 8
+        revalidate: 60 * 60 * 24 * 30
     }
 }

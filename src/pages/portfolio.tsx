@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import { GetStaticProps } from 'next'
-import { api } from '../../utils/api'
+import { api } from '../utils/api'
 
 import Navbar from '../components/Navbar'
 import Project from '../components/Project'
@@ -60,6 +60,6 @@ export const getStaticProps: GetStaticProps = async () => {
 
     return {
         props: { projects },
-        revalidate: 60 * 60 * 8
+        revalidate: 60 * 60 * 24 * 30
     }
 }

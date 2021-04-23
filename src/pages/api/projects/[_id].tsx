@@ -1,5 +1,5 @@
 import { ObjectID } from 'mongodb'
-import connect from "../../../../utils/database";
+import connect from "../../../utils/database";
 
 export default async function FindOneProject(req, res) {
     if (req.method === 'GET') {        

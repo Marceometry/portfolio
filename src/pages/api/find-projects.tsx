@@ -1,4 +1,4 @@
-import connect from "../../../utils/database";
+import connect from "../../utils/database";
 
 export default async function FindProjects(req, res) {
     if (req.method === 'GET') {        
