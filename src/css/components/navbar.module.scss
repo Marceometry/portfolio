@@ -31,7 +31,8 @@
             width: 25vw;
             padding: 1rem 0;
             text-align: center;
-            transition: .2s;
+            transition-property: color, background;
+            transition-duration: .2s;
             
             &.active {
                 color: var(--text);
