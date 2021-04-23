@@ -44,7 +44,6 @@ export default function Portfolio({ projects }: PortfolioProps) {
     )
 }
 
-
 type Project = {
     _id: string
     name: string
