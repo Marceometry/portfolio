@@ -6,7 +6,7 @@ import Profile from '../components/Profile'
 import Footer from '../components/Footer'
 import { Purple } from '../components/TextColor'
 
-import css from '../css/base.module.css'
+import css from '../css/base.module.scss'
 
 export default function About() {
     return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import css from '../css/components/profile.module.css'
+import css from '../css/components/profile.module.scss'
 
 export default function Profile() {
     return (

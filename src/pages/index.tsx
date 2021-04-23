@@ -1,8 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
 import { Green } from '../components/TextColor'
-import css from '../css/landing.module.css'
+import css from '../css/landing.module.scss'
 import LinkCard from '../components/LinkCard'
 
 export default function Landing() {

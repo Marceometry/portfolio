@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import Link from 'next/link'
-import css from '../css/components/project.module.css'
+import css from '../css/components/project.module.scss'
 
 type ProjectProps = {
     _id: string

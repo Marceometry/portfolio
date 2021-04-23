@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import Link from "next/link";
-import css from "../css/components/linkCard.module.css"
+import css from "../css/components/linkCard.module.scss"
 
 type LinkCardProps = {
     link: string

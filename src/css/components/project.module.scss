@@ -1,0 +1,38 @@
+.container {
+    margin: 0 1rem;
+    display: flex;
+
+    &:hover {
+        img {
+            border: 2px solid var(--green);
+        }
+
+        h2, h4 {
+            color: var(--green);
+        }
+    }
+    
+    img {
+        width: 18.75rem!important;
+        margin-right: 2rem;
+        border-radius: 10px;
+        border: 2px solid var(--purple);
+        transition: border .2s;
+    }
+    
+    h2 {
+        margin-bottom: .5rem;
+        color: var(--purple-light);
+        transition: color .1s;
+    }
+    
+    h4 {
+        margin-bottom: 1rem;
+        color: var(--purple-light);
+        transition: color .1s;
+    }
+    
+    p {
+        text-align: justify;
+    }
+}

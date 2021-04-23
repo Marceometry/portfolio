@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import css from '../css/components/navbar.module.css'
+import css from '../css/components/navbar.module.scss'
 
 export default function Navbar() {
     const router = useRouter()
