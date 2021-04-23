@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <footer className={css.footer}>
             <section>
-                <h3>Tecnologias já trabalhadas:</h3>
+                <h3>Tecnologias que já tive contato:</h3>
 
                 <ul>
                     <li><img src="/icons/html.svg" alt=""/>HTML</li>

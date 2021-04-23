@@ -35,6 +35,7 @@ export default function Portfolio({ projects }: PortfolioProps) {
                         title={project.name} 
                         origin={project.origin} 
                         description={project.description}
+                        technologies={project.technologies}
                     />
                 ))}
             </main>
@@ -46,10 +47,11 @@ export default function Portfolio({ projects }: PortfolioProps) {
 
 type Project = {
     _id: string
+    img: string
     name: string
     origin: string
     description: string
-    img: string
+    technologies: string[]
 }
 
 export const getStaticProps: GetStaticProps = async () => {

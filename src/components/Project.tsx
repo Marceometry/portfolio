@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react'
 import Link from 'next/link'
+import { Purple } from './TextColor'
+
 import css from '../css/components/project.module.scss'
 
 type ProjectProps = {
@@ -8,6 +10,7 @@ type ProjectProps = {
     title: string
     origin: string
     description: string
+    technologies: string[]
 }
 
 export default function Project(props: ProjectProps) {
@@ -22,6 +25,24 @@ export default function Project(props: ProjectProps) {
                     <h4>{props.origin}</h4>
 
                     <p>{props.description}</p>
+
+                    {props.technologies && (
+                        <span className={css.technologies}>
+                        Tecnologias
+                            utilizadas: {props.technologies.map(technology => {
+                                return (
+                                    <>
+                                    <Purple>
+                                        <span className={css.technology}>
+                                            {technology}
+                                        </span>
+                                    </Purple>
+                                    <span className={css.separate}> - </span> 
+                                    </>
+                                )
+                            })}
+                        </span>
+                    )}
                 </section>
             </a>
         </Link>

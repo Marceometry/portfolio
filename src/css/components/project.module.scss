@@ -5,10 +5,17 @@
     &:hover {
         img {
             border: 2px solid var(--green);
+            transition: .25s;
         }
 
         h2, h4 {
             color: var(--green);
+            transition: .2s;
+        }
+
+        .technology {
+            color: var(--green);
+            transition: .2s;
         }
     }
     
@@ -17,22 +24,24 @@
         margin-right: 2rem;
         border-radius: 10px;
         border: 2px solid var(--purple);
-        transition: border .2s;
     }
     
     h2 {
         margin-bottom: .5rem;
         color: var(--purple-light);
-        transition: color .1s;
     }
     
     h4 {
         margin-bottom: 1rem;
         color: var(--purple-light);
-        transition: color .1s;
     }
     
     p {
         text-align: justify;
+        margin-bottom: .5rem;
+    }
+
+    .separate:last-of-type {
+        display: none;
     }
 }
