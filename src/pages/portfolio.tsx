@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar'
 import Project from '../components/Project'
 import Footer from '../components/Footer'
 
-import css from '../css/portfolio.module.css'
+import css from '../css/portfolio.module.scss'
 
 type PortfolioProps = {
     projects: Project[]

@@ -1,0 +1,55 @@
+.footer {
+    width: 100%;
+    padding: 2rem 15% 3rem;
+    margin-top: 4rem;
+
+    color: var(--green);
+    background: var(--background-2);
+    border-top: 1px solid var(--purple);
+
+    display: flex;
+    justify-content: space-between;
+
+    hr {
+        margin: 0 3rem;
+        border: 1px solid var(--purple);
+    }
+
+    section {
+        flex: 1;
+        padding: 1rem 0 2rem;
+        text-align: center;
+
+        h3 {
+            font-size: 1.25rem;
+        }
+        
+        ul {
+            margin-top: 2rem;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5rem 3rem;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    height: 2rem;
+                    margin-right: .5rem;
+
+                    &.mongo {
+                        margin-right: -.5rem;
+                        transform: translateX(-.5rem);
+                    }
+                }
+            }
+        }
+    
+        p:first-child {
+            margin-bottom: 1rem;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 .container main {
     width: 60%;
     margin: 0 auto;
-    min-height: calc(100vh - (20vh + 16.5rem));
+    min-height: calc(100vh - (20vh + 21rem));
 }
 
 .container section header {
@@ -14,8 +14,8 @@
 
 .container section article p {
     margin-bottom: .5rem;
-    font-size: 1.25rem;
     font-weight: 400;
+    font-size: 1.25rem;
     line-height: 1.5rem;
     text-indent: 7.75rem;
     text-align: justify;

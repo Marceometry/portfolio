@@ -1,0 +1,16 @@
+.container main {
+    width: 60%;
+    margin: 0 auto;
+    
+    hr:first-of-type {
+        margin: .5rem 0 2rem;
+    }
+    
+    hr {
+        margin: 1.5rem 0;
+    }   
+    
+    hr:last-of-type {
+        display: none;
+    }
+}
