@@ -28,7 +28,7 @@
             margin-top: 2rem;
             list-style: none;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 1.5rem 3rem;
 
             li {
@@ -39,6 +39,12 @@
                 img {
                     height: 2rem;
                     margin-right: .5rem;
+
+                    &.ts {
+                        height: 1.875rem;
+                        width: 1.75rem;
+                        border-radius: 4px;
+                    }
 
                     &.mongo {
                         margin-right: -.5rem;

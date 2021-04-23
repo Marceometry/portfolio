@@ -9,13 +9,14 @@ export default function Footer() {
                 <h3>Tecnologias que já tive contato:</h3>
 
                 <ul>
-                    <li><img src="/icons/html.svg" alt=""/>HTML</li>
-                    <li><img src="/icons/css.svg" alt=""/>CSS</li>
-                    <li><img src="/icons/js.svg" alt=""/>JavaScript</li>
-                    <li><img src="/icons/react.svg" alt=""/>React</li>
-                    <li><img src="/icons/next.svg" alt=""/>Next.js</li>
-                    <li><img src="/icons/mongo.svg" alt="" className={css.mongo}/>MongoDB</li>
-                    <li><img src="/icons/node.svg" alt=""/>Node.js</li>
+                    <li><img src="/icons/html.svg"/>HTML</li>
+                    <li><img src="/icons/css.svg"/>CSS</li>
+                    <li><img src="/icons/js.svg"/>JavaScript</li>
+                    <li><img src="/icons/ts.svg" className={css.ts}/>TypeScript</li>
+                    <li><img src="/icons/react.svg"/>React</li>
+                    <li><img src="/icons/next.svg"/>Next.js</li>
+                    <li><img src="/icons/mongo.svg" className={css.mongo}/>MongoDB</li>
+                    <li><img src="/icons/node.svg"/>Node.js</li>
                 </ul>
             </section>
 

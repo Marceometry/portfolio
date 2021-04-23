@@ -32,7 +32,7 @@ export default function Project(props: ProjectProps) {
                             utilizadas: {props.technologies.map(technology => {
                                 return (
                                     <>
-                                    <Purple>
+                                    <Purple key={technology}>
                                         <span className={css.technology}>
                                             {technology}
                                         </span>
