@@ -54,7 +54,7 @@ type Project = {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const { data } = await api.get('find-projects')
+    const { data } = await api.get('api/find-projects')
 
     const projects = data
 
