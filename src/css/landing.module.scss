@@ -8,7 +8,7 @@
   main {
     width: min(1400px, 90vw);
     height: 90vh;
-    padding: 4rem;
+    padding: 4rem 4rem 0;
   
     display: flex;
     justify-content: space-between;
@@ -42,6 +42,7 @@
     }
     
     section {
+      padding-bottom: 4rem;
       display: grid;
       grid-template-columns: auto auto;
       gap: 2.25rem 6rem;
@@ -58,11 +59,8 @@
       justify-content: flex-start;
 
       section {
+        padding-bottom: 2rem;
         grid-template-columns: auto;
-
-        a:last-child {
-          margin-bottom: 2rem;
-        }
       }
     }
   }
