@@ -1,4 +1,4 @@
-import connect from "../../utils/database";
+import connect from "../../services/database";
 
 type AddProjectInfo = {
     name: string

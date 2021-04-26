@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { api } from '../../utils/api'
+import { api } from '../../services/api'
 
 import Navbar from '../../components/Navbar'
 import LinkCard from '../../components/LinkCard'
