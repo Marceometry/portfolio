@@ -15,8 +15,11 @@
     flex-direction: column;
 
     header {
+      margin-bottom: 4rem;
+
       div {
         display: flex;
+        margin-bottom: 3rem;
         
         img {
           width: 8rem;
@@ -28,7 +31,7 @@
         h1 {
           font-size: 2.75rem;
           line-height: 4rem;
-          margin: 0 0 4rem 2.25rem;
+          margin-left: 2.25rem;
         }
       }
       
@@ -48,6 +51,22 @@
 
 
 // mobile
+
+@media(min-height: 100vw) {
+  .container {
+    main {
+      justify-content: flex-start;
+
+      section {
+        grid-template-columns: auto;
+
+        a:last-child {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
 
 @media(max-width: 1200px) {
   .container {
@@ -90,12 +109,12 @@
           h1 {
             font-size: 1.75rem;
             line-height: 2.5rem;
-            margin-bottom: 3rem;
           }
         }
     
         p {
           font-size: 1.25rem;
+          max-width: 100%;
         }
       }
     }
@@ -117,6 +136,59 @@
     
         p {
           font-size: 1rem;
+        }
+      }
+
+      section {
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+@media(max-width: 560px) {
+  .container {
+    main {
+      padding: 2rem;
+        
+      header {
+        div {
+          h1 {
+            font-size: 1.25rem;
+            margin-left: 1.5rem;
+          }
+        }
+      }
+
+      section {
+        grid-template-columns: auto;
+      }
+    }
+  }
+}
+
+@media(max-width: 470px) {
+  .container {
+    main {
+      padding: 2rem;
+        
+      header {
+        div {
+          flex-direction: column;
+          margin-bottom: 2rem;
+
+          img {
+            width: 10rem;
+            height: 10rem;
+            margin: 0 auto 1.5rem;
+          }
+
+          h1 {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            text-align: center;
+            margin-left: 0;
+          }
         }
       }
     }

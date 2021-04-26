@@ -29,16 +29,18 @@ export default function Project(props: ProjectProps) {
                     {props.technologies && (
                         <span className={css.technologies}>
                         Tecnologias
-                            utilizadas: {props.technologies.map(technology => {
+                            utilizadas: {props.technologies.map((technology, index) => {
                                 return (
-                                    <>
-                                    <Purple key={technology}>
-                                        <span className={css.technology}>
-                                            {technology}
-                                        </span>
-                                    </Purple>
-                                    <span className={css.separate}> - </span> 
-                                    </>
+                                    <span key={technology}>
+                                        <Purple>
+                                            <span className={css.technology}>
+                                                {technology}
+                                            </span>
+                                        </Purple>
+                                        {index < props.technologies.length - 1 && (
+                                            <strong className={css.separate}> - </strong> 
+                                        )}
+                                    </span>
                                 )
                             })}
                         </span>
