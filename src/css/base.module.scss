@@ -22,3 +22,66 @@
         }
     }
 }
+
+
+// mobile
+
+@media(max-width: 1300px) {
+    .container main {
+        width: 70%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .container main {
+        width: 80%;
+
+        section {
+            header {
+                margin-left: 6rem;
+                margin-right: 6rem;
+            }
+            
+            article p {
+                text-indent: 6rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .container main {
+        width: 80%;
+
+        section {
+            header {
+                margin: 1.5rem 4rem;
+            }
+            
+            article p {
+                text-indent: 4rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .container main {
+        width: 90%;
+
+        h2 {
+            font-size: 1.25rem;
+        }
+
+        section {
+            header {
+                margin-left: 0rem;
+                margin-right: 0rem;
+            }
+            
+            article p {
+                text-indent: 2.5rem;
+            }
+        }
+    }
+}

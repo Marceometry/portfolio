@@ -3,11 +3,12 @@
     display: flex;
     
     img {
-        width: 18.75rem!important;
+        width: 18.75rem;
         margin-right: 2rem;
         border-radius: 10px;
         border: 2px solid var(--purple);
         transition: border .25s;
+        object-fit: cover;
     }
     
     h2 {
@@ -42,6 +43,32 @@
         .technology,
         h2, h4 {
             color: var(--green);
+        }
+    }
+}
+
+
+// mobile
+
+@media(max-width: 700px) {
+    .container {
+        margin: 0;
+        flex-direction: column;
+
+        img {
+            width: 20rem;
+            margin: 0 auto 1rem;
+        }
+    }
+}
+
+@media(max-width: 550px) {
+    .container {
+        flex-direction: column;
+
+        img {
+            width: 20rem;
+            margin: 0 auto 1rem;
         }
     }
 }
