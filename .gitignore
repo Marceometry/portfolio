@@ -7,8 +7,8 @@
 
 # testing
 /coverage
-/src/pages/portfolio
-/src/pages/portfolio.tsx
+src/pages/portfolio
+src/pages/portfolio.tsx
 
 # next.js
 /.next/
