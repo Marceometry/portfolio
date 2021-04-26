@@ -9,7 +9,7 @@ export default function Landing() {
     <div className={css.container}>
       <main>
         <Head>
-          <title>Marcelino - FrontEnd Dev</title>
+          <title>Marcelino | FrontEnd Dev</title>
         </Head>
 
         <header>

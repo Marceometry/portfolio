@@ -12,7 +12,7 @@ export default function About() {
   return (
     <div className={css.container}>
       <Head>
-        <title>Sobre mim</title>
+        <title>Marcelino | Sobre mim</title>
       </Head>
 
       <Navbar />
