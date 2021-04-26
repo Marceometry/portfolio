@@ -46,6 +46,13 @@ export default function Project({ project }: ProjectProps) {
                     
                     {project.webLink && <LinkCard link={`${project.webLink}`} img="globe" external="true">Acesse</LinkCard>}
                 </div>
+
+                <section>
+                    <h2>Tecnolgias Utilizadas</h2>
+                    <hr/>
+
+                    <p>{project.technologies}</p>
+                </section>
             </main>
 
             <Footer />
@@ -58,28 +65,29 @@ type Project = {
     name: string
     details: string
     img: string
+    technologies: string[]
     githubLink: string
     designLink: string
     webLink: string
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
-    const { data } = await api.get('/api/find-projects')
+// export const getStaticPaths: GetStaticPaths = async () => {
+//     const { data } = await api.get('/api/find-projects')
     
-    const paths = data.map((project: Project) => ({
-        params: { id: project._id },
-    }))
+//     const paths = data.map((project: Project) => ({
+//         params: { id: project._id },
+//     }))
     
-    return { paths, fallback: false }
-}
+//     return { paths, fallback: false }
+// }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-    const { data } = await api.get(`/api/projects/${params.id}`)
+// export const getStaticProps: GetStaticProps = async ({ params }) => {
+//     const { data } = await api.get(`/api/projects/${params.id}`)
     
-    const project = data
+//     const project = data
     
-    return {
-        props: { project },
-        revalidate: 60 * 60 * 24
-    }
-}
+//     return {
+//         props: { project },
+//         revalidate: 30
+//     }
+// }

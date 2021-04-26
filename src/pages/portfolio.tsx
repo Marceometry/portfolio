@@ -54,13 +54,13 @@ type Project = {
     technologies: string[]
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-    const { data } = await api.get('/api/find-projects')
+// export const getStaticProps: GetStaticProps = async () => {
+//     const { data } = await api.get('/api/find-projects')
 
-    const projects = data
+//     const projects = data
 
-    return {
-        props: { projects },
-        revalidate: 60 * 60 * 24
-    }
-}
+//     return {
+//         props: { projects },
+//         revalidate: 30
+//     }
+// }
