@@ -48,11 +48,11 @@ export default function Project({ project }: ProjectProps) {
                     {project.webLink && <LinkCard link={`${project.webLink}`} img="globe" external="true">Acesse</LinkCard>}
                 </div>
 
-                <section>
-                    <h2>Tecnolgias Utilizadas</h2>
-                    <hr/>
+                {project.technologies && (
+                    <section>
+                        <h2>Tecnolgias Utilizadas</h2>
+                        <hr/>
 
-                    {project.technologies && (
                         <p className={css.technologies}>
                             {project.technologies.map((technology, index) => {
                                 return (
@@ -69,8 +69,8 @@ export default function Project({ project }: ProjectProps) {
                                 )
                             })}
                         </p>
-                    )}
-                </section>
+                    </section>
+                )}
             </main>
 
             <Footer />
