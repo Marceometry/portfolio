@@ -116,3 +116,13 @@
         }
     }
 }
+
+@media(max-width: 270px) {
+    .footer {
+        section {
+            ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

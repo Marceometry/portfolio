@@ -30,13 +30,27 @@
         p {
             text-align: justify;
             text-indent: 2.5rem;
+
+            &.technologies {
+                width: fit-content;
+                margin: 0 auto;
+                text-indent: 0;
+
+                span {
+                    font-size: 1.25rem;
+    
+                    strong {
+                        margin: 0 .75rem;
+                    }
+                }
+            }
         }
     }
 }
 
 
 .links {
-    margin-top: 3rem;
+    margin: 3rem 0;
     display: flex;
     justify-content: space-around;
     
@@ -44,17 +58,96 @@
         min-width: 25%;
         padding: 1rem;
         
-        div img {
-            height: 3rem!important;
+        div {
+            img {
+                height: 3rem;
+            }
+            
+            span {
+                font-size: 1.25rem;
+                margin: 0 1rem 0 .75rem;
+            }
         }
         
-        img {
-            height: 2.25rem!important;
+        img:last-child {
+            height: 2.25rem;
         }
-        
-        span {
-            font-size: 1.25rem;
-            margin: 0 1rem 0 .75rem;
+    }
+}
+
+
+// mobile
+
+@media(max-width: 1300px) {
+    .container main {
+        width: 80%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .links {    
+        a {
+            min-width: 15%;
+            
+            div {
+                img {
+                    height: 2rem;
+                }
+                
+                span {
+                    font-size: 1rem;
+                }
+            }
+            
+            img:last-child {
+                height: 1.75rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .container main {
+        width: 90%;
+
+        section {
+            p.technologies {
+                span {
+                    font-size: 1.125rem;
+    
+                    strong {
+                        margin: 0 .5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .links {
+        justify-content: space-between;
+
+        a {
+            padding: .75rem;
+            
+            div {
+                span {
+                    margin: 0 .75rem;
+                }
+            }
+            
+            img:last-child {
+                height: 1.25rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 550px) {
+    .links {
+        flex-direction: column;
+
+        a:not(:last-child) {
+            margin-bottom: 2rem;
         }
     }
 }
