@@ -7,8 +7,7 @@
 
 # testing
 /coverage
-# /src/pages/portfolio
-# /src/pages/portfolio.tsx
+/dinamic-routes
 
 # next.js
 /.next/
