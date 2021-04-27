@@ -53,18 +53,7 @@
 
         img {
             width: 20rem;
-            margin: 0 auto 1rem;
-        }
-    }
-}
-
-@media(max-width: 550px) {
-    .container {
-        flex-direction: column;
-
-        img {
-            width: 20rem;
-            margin: 0 auto 1rem;
+            margin: 0 auto 1.5rem;
         }
     }
 }

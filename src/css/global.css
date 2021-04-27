@@ -27,6 +27,7 @@ body {
 button, a {
   cursor: pointer;
   color: inherit;
+  border: none;
   text-decoration: none;
 }
 

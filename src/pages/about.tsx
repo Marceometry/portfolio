@@ -41,7 +41,7 @@ export default function About() {
                do framework <Green>Next.js</Green>.</p>
 
             <p>Este site foi inteiramente desenvolvido por mim em React,
-               utilizando as ferramentas do Next.js. Em meu <Purple>Portfólio</Purple>, 
+               utilizando os recursos do Next.js. Em meu <Purple>Portfólio</Purple>, 
                é possível encontrar tanto projetos pessoais (que por enquanto ainda são 
                poucos) quanto os da NLW que participei, por exemplo, além de trabalhos 
                do meu curso técnico.</p>
