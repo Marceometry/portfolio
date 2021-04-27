@@ -6,7 +6,7 @@
         width: 18.75rem;
         margin-right: 2rem;
         border-radius: 10px;
-        border: 2px solid var(--purple);
+        border: 1px solid var(--purple);
         transition: border .25s;
         object-fit: cover;
     }
@@ -33,7 +33,7 @@
 
     &:hover {
         img {
-            border: 2px solid var(--green);
+            border: 1px solid var(--green);
         }
 
         .technology,
