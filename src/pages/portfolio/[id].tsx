@@ -1,12 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { api } from '../../src/services/api'
+import { api } from '../../services/api'
 
-import Navbar from '../../src/components/Navbar'
-import LinkCard from '../../src/components/LinkCard'
-import Footer from '../../src/components/Footer'
-import { Purple } from '../../src/components/TextColor'
+import Navbar from '../../components/Navbar'
+import LinkCard from '../../components/LinkCard'
+import Footer from '../../components/Footer'
+import { Purple } from '../../components/TextColor'
 
 import css from '../../css/project.module.scss'
 
