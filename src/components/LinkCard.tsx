@@ -12,17 +12,17 @@ type LinkCardProps = {
 export default function LinkCard(props: LinkCardProps) {
     return (
         <Link href={props.link}>
-        <button className={css.linkCard} target={props.external == 'true' ? '_blank': ''}
-           rel={props.external == 'true' ? 'external noopener noreferrer nofollow' : ''}>
+            <a className={css.linkCard} target={props.external == 'true' ? '_blank': ''}
+            rel={props.external == 'true' ? 'external noopener noreferrer nofollow' : ''}>
 
-            <div>
-                <img src={`/icons/${props.img}.svg`} alt=""/>
+                <div>
+                    <img src={`/icons/${props.img}.svg`} alt=""/>
 
-                <span>{props.children}</span>
-            </div>
+                    <span>{props.children}</span>
+                </div>
 
-            <img src="/icons/arrow-right.svg" alt="->"/>
-        </button>
+                <img src="/icons/arrow-right.svg" alt="->"/>
+            </a>
         </Link>
     )
 }
