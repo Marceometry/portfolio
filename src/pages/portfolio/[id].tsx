@@ -86,7 +86,7 @@ type Project = {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const { data } = await api.get('/api/find-projects')
+    const { data } = await api.get('/api/findProjects')
     
     const paths = data.map((project: Project) => ({
         params: { id: project._id },
