@@ -18,6 +18,8 @@ export default function Footer() {
                     <li><img src="/icons/mongo.svg" className={css.mongo}/>MongoDB</li>
                     <li><img src="/icons/handlebars.svg"/>Handlebars</li>
                     <li><img src="/icons/node.svg"/>Node.js</li>
+                    <li><img src="/icons/database.svg"/>SQL</li>
+                    <li><img src="/icons/database.svg"/>SQLite</li>
                 </ul>
             </section>
 
