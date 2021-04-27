@@ -18,7 +18,7 @@ export default function Project({ project }: ProjectProps) {
     return (
         <div className={css.container}>
             <Head>
-                <title>{project.name}</title>
+                <title>Portfólio | {project.name}</title>
             </Head>
 
             <Navbar />
