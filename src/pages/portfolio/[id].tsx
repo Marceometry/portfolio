@@ -52,7 +52,9 @@ export default function Project({ project }: ProjectProps) {
                     <h2>Tecnolgias Utilizadas</h2>
                     <hr/>
 
-                    <p className={css.technologies}>{project.technologies.map((technology, index) => {
+                    {project.technologies && (
+                        <p className={css.technologies}>
+                            {project.technologies.map((technology, index) => {
                                 return (
                                     <span key={technology}>
                                         <Purple>
@@ -65,7 +67,9 @@ export default function Project({ project }: ProjectProps) {
                                         )}
                                     </span>
                                 )
-                            })}</p>
+                            })}
+                        </p>
+                    )}
                 </section>
             </main>
 
