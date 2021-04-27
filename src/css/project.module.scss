@@ -54,7 +54,7 @@
     display: flex;
     justify-content: space-around;
     
-    button {
+    a {
         min-width: 25%;
         padding: 1rem;
         
@@ -86,7 +86,7 @@
 
 @media(max-width: 1000px) {
     .links {    
-        button {
+        a {
             min-width: 15%;
             
             div {
@@ -126,7 +126,7 @@
     .links {
         justify-content: space-between;
 
-        button {
+        a {
             padding: .75rem;
             
             div {
@@ -146,7 +146,7 @@
     .links {
         flex-direction: column;
 
-        button:not(:last-child) {
+        a:not(:last-child) {
             margin-bottom: 2rem;
         }
     }
